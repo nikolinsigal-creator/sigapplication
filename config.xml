@@ -33,8 +33,15 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
+
     <plugin name="phonegap-plugin-mobile-accessibility" spec="https://github.com/phonegap/phonegap-mobile-accessibility.git" />
     <plugin name="cordova-plugin-splashscreen" spec="https://github.com/apache/cordova-plugin-splashscreen.git" />
+
+
+    <plugin spec="https://github.com/apache/cordova-plugin-splashscreen.git#054387e" />
+<plugin name="cordova-plugin-whitelist" spec="1.3.4" />
+<plugin spec="https://github.com/phonegap/phonegap-mobile-accessibility.git#e982105" />
+
     <engine name="ios" spec="^4.5.5" />
     <engine name="android" spec="^7.0.0" />
 </widget>
