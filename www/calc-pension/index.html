@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Kalkulator Pensioni</title>
+
+      <meta charset="UTF-8">
+</head>
+<body>
+ 
+    <form id="formc" name="formc" method="POST" action="#">
+        
+           <table style="border-collapse: collapse;" bgcolor="#FFFFFF" border="0" cellpadding="2" cellspacing="0">
+        
+                   <tbody><tr> 
+        
+                       <td class="ee100" align="right" width="279">
+        
+                    Mosha e fillimit tė kursimit</td>
+        
+                       <td style="width: 89pt;" class="ee103" align="right" width="119">
+        
+                         <input name="p1D1" id="p1D1" value="0" onblur="this.value=eedisplayFloat(eeparseFloat(this.value));recalc_onclick('p1D1')" tabindex="1" style="width: 89pt;" size="16" class="ee101" type="text">			   </td>
+        
+                       <td style="width: 30pt;" class="ee104" width="40">
+        
+                    Vite			   </td>
+                   </tr>
+        
+                   <tr> 
+        
+                       <td class="ee106" align="right">
+        
+                    Mosha e pensionit			   </td>
+        
+                       <td class="ee107" align="right">
+        
+                         <input name="p1D2" id="p1D2" value="65" onblur="this.value=eedisplayFloat(eeparseFloat(this.value));recalc_onclick('p1D2')" tabindex="2" style="width: 89pt;" size="16" class="ee101" type="text">			   </td>
+        
+                       <td class="ee108">
+        
+                    Vite			   </td>
+                   </tr>
+        
+                   <tr> 
+        
+                       <td class="ee106" align="right">
+        
+                    Kontributi mujor			   </td>
+        
+                       <td class="ee107" align="right">
+        
+                         <input name="p1D3" id="p1D3" onblur="this.value=eedisplayFloatNDTh(eeparseFloatTh(this.value),2);recalc_onclick('p1D3')" tabindex="3" style="width: 89pt;" size="16" class="ee101" type="text">			   </td>
+        
+                       <td class="ee108">
+        
+                    Lek			   </td>
+                   </tr>
+        
+                   <tr> 
+        
+                       <td class="ee109" align="right">
+        
+                    Interesi vjetor nga investimi</td>
+        
+                       <td class="ee107" align="right">
+        
+            <select name="p1D4" id="p1D4" size="1" onchange="recalc_onclick('p1D4')" tabindex="4" class="ee101" style="width:89pt">
+        
+               <option value="1">1</option>
+        
+               <option value="1.25">1.25</option>
+        
+               <option value="1.5">1.5</option>
+        
+               <option value="1.75">1.75</option>
+        
+               <option value="2">2</option>
+        
+               <option value="2.25">2.25</option>
+        
+               <option value="2.5">2.5</option>
+        
+               <option value="2.75">2.75</option>
+        
+               <option value="3">3</option>
+        
+               <option value="3.25">3.25</option>
+        
+               <option value="3.5">3.5</option>
+        
+               <option value="3.75">3.75</option>
+        
+               <option value="4">4</option>
+        
+               <option value="4.25">4.25</option>
+        
+               <option value="4.5">4.5</option>
+        
+               <option value="4.75">4.75</option>
+        
+               <option value="5" selected="selected">5</option>
+        
+               <option value="5.25">5.25</option>
+        
+               <option value="5.5">5.5</option>
+        
+               <option value="5.75">5.75</option>
+        
+               <option value="6">6</option>
+        
+               <option value="6.25">6.25</option>
+        
+               <option value="6.5">6.5</option>
+        
+               <option value="6.75">6.75</option>
+        
+               <option value="7">7</option>
+        
+               <option value="7.25">7.25</option>
+        
+               <option value="7.5">7.5</option>
+        
+               <option value="7.75">7.75</option>
+        
+               <option value="8">8</option>
+        
+               <option value="8.25">8.25</option>
+        
+               <option value="8.5">8.5</option>
+        
+               <option value="8.75">8.75</option>
+        
+               <option value="9">9</option>
+        
+               <option value="9.25">9.25</option>
+        
+               <option value="9.5">9.5</option>
+        
+               <option value="9.75">9.75</option>
+        
+               <option value="10">10</option>
+        
+               <option value="10.25">10.25</option>
+        
+               <option value="10.5">10.5</option>
+        
+               <option value="10.75">10.75</option>
+        
+               <option value="11">11</option>
+        
+               <option value="11.25">11.25</option>
+        
+               <option value="11.5">11.5</option>
+        
+               <option value="11.75">11.75</option>
+        
+               <option value="12">12</option>
+        
+               <option value="12.25">12.25</option>
+        
+               <option value="12.5">12.5</option>
+        
+               <option value="12.75">12.75</option>
+        
+               <option value="13">13</option>
+        
+               <option value="13.25">13.25</option>
+        
+               <option value="13.5">13.5</option>
+        
+               <option value="13.75">13.75</option>
+        
+               <option value="14">14</option>
+        
+               <option value="14.25">14.25</option>
+        
+               <option value="14.5">14.5</option>
+        
+               <option value="14.75">14.75</option>
+        
+               <option value="15">15</option>
+        
+               <option value="15.25">15.25</option>
+        
+               <option value="15.5">15.5</option>
+        
+               <option value="15.75">15.75</option>
+        
+               <option value="16">16</option>
+        
+               <option value="16.25">16.25</option>
+        
+               <option value="16.5">16.5</option>
+        
+               <option value="16.75">16.75</option>
+        
+               <option value="17">17</option>
+        
+               <option value="17.25">17.25</option>
+        
+               <option value="17.5">17.5</option>
+        
+               <option value="17.75">17.75</option>
+        
+               <option value="18">18</option>
+        
+               <option value="18.25">18.25</option>
+        
+               <option value="18.5">18.5</option>
+        
+               <option value="18.75">18.75</option>
+        
+               <option value="19">19</option>
+        
+               <option value="19.25">19.25</option>
+        
+               <option value="19.5">19.5</option>
+        
+               <option value="19.75">19.75</option>
+        
+               <option value="20">20</option>
+            </select>			   </td>
+        
+                       <td class="ee110">
+        
+                    %			   </td>
+                   </tr>
+        
+                   <tr> 
+        
+                       <td class="ee109" align="right">
+        
+                    Kohėzgjatja e pensionit te programuar (nė vite)			   </td>
+        
+                       <td class="ee107" align="right">
+        
+                         <input name="p1D7" id="p1D7" value="1" onblur="this.value=eedisplayFloat(eeparseFloat(this.value));recalc_onclick('p1D7')" tabindex="5" style="width: 89pt;" size="16" class="ee101" type="text">			   </td>
+        
+                       <td class="ee110">
+        
+                    Vite			   </td>
+                   </tr>
+        
+                   <tr> 
+        
+                       <td class="ee106" align="right">
+        
+                    Shuma e akumuluar gjatė kursimit			   </td>
+        
+                       <td class="ee107" align="right">
+        
+                         <input name="p1D9" id="p1D9" value="0.00" readonly="true" style="border: 0px solid rgb(0, 0, 0); width: 89pt;" size="16" class="ee101" type="text">			   </td>
+        
+                       <td class="ee108">
+        
+                    Lek			   </td>
+                   </tr>
+        
+                   <tr> 
+        
+                       <td class="ee109" align="right">
+        
+                    Pensioni mujor			   </td>
+        
+                       <td class="ee107" align="right">
+        
+                         <input name="p1D10" id="p1D10" value="0.00" readonly="true" style="border: 0px solid rgb(0, 0, 0); width: 89pt;" size="16" class="ee101" type="text">			   </td>
+        
+                       <td class="ee110">
+        
+                    Lek			   </td>
+                   </tr>
+             </tbody></table>
+        
+             <p>
+               <input checked="checked" name="automatic_recalc" type="checkbox">
+               Llogaritje automatike
+        &nbsp;
+        
+       <!--  <input value="Rillogarit" name="do_recalc" onclick="LlogaritPension2()" type="button"> -->
+        </p>
+        </form>
+
+   
+        
+<script language="javascript">
+    recalc_onclick('');
+    
+    function LlogaritPensionTest (){
+         console.log( LlogaritPension(30,60,12000,5,10) ) ;
+    }
+
+    function LlogaritPension2 (){
+         var Resp= LlogaritPension(document.formc.p1D1.value,document.formc.p1D2.value,document.formc.p1D3.value,document.formc.p1D4.value,document.formc.p1D7.value) ;
+         var ss = Resp.split("#");  
+
+         document.formc.p1D9.value=ss[0];
+         document.formc.p1D10.value=ss[1];
+    }
+
+    </script>
+    <!-- ExcelEverywhere Body end -->
+    <noscript>
+    <p></noscript>
+
+</body>
+
+     <script type="text/javascript" src="calcPension.js"></script>
+
+</html>

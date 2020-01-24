@@ -1,0 +1,88 @@
+.page-build{display:none;}
+
+.header-light .header-logo, .footer-light .footer-logo{background-image:url(../images/sigal-logo.png);}
+.header-dark .header-logo, .footer-dark .footer-logo{background-image:url(../images/sigal-logo.png);}
+
+.header .header-logo{
+	background-size:140px 40px;
+	width:140px;
+	margin-left:-58px;
+	color:#FFFFFF;
+}
+
+.footer .footer-logo{
+	background-size:180px 50px;
+	width:100%;
+	height:32px;
+	margin:0 auto;
+}
+
+.menu-header .menu-logo{
+	background-image:url(../images/uniqa-logo.png);
+	/*background-color:rgba(255,255,255,0.05);
+	padding:5px;
+	border:solid 1px rgba(0,0,0,0.1);
+	border-radius:100px;*/
+	background-size:80px 80px;
+	background-repeat:no-repeat;
+	background-position:center center;
+	width:90px;
+	height:90px;
+	z-index:10;
+	display:block;
+	margin:20px auto 15px auto;
+}
+
+p.center-text.font-10.small-line-height.top-10.orari { 
+margin-top: -10px!important;
+ }
+
+ img.emergjencat {
+ 	width: 64px;
+ 	height: 64px;
+ 	display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+ a.kushtet:hover {
+ 	text-decoration: underline;
+ }
+
+.iframe-container {
+  overflow: hidden;
+  padding-top: 850px!important;
+  position: relative;
+}
+ 
+.iframe-container iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
+ 
+/* 4x3 Aspect Ratio */
+.iframe-container-4x3 {
+  padding-top: 75%;
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+}
+
+.header-logo-app .header-icon-5 {
+    right: 130px;
+}
