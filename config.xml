@@ -34,8 +34,7 @@
         <allow-intent href="itms-apps:*" />
     </platform>
 
-    <plugin name="phonegap-plugin-mobile-accessibility" spec="https://github.com/phonegap/phonegap-mobile-accessibility.git" />
-    <plugin name="cordova-plugin-splashscreen" spec="https://github.com/apache/cordova-plugin-splashscreen.git" />
+
 
 
     <plugin spec="https://github.com/apache/cordova-plugin-splashscreen.git#054387e" />
