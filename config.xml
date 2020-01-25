@@ -42,5 +42,5 @@
 <plugin spec="https://github.com/phonegap/phonegap-mobile-accessibility.git#e982105" />
 
     <engine name="ios" spec="^4.5.5" />
-    <engine name="android" spec="^9.0.0" />
+    <engine name="android" spec="^8.0.0" />
 </widget>
